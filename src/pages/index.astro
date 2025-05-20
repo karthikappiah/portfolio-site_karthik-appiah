@@ -1,19 +1,13 @@
 ---
 import '../styles/global.css';
 
-import { ModeToggle } from '@/components/shadcn/mode-toggle';
+import RootLayout from "@/layouts/root.astro"
+
+import { Button } from '@/components/shadcn/button';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Karthik Appiah</title>
-	</head>
-
-	<body class="flex items-center justify-center h-screen">
-		<ModeToggle client:load />
-	</body>
-</html>
+<RootLayout>
+	<main class="flex items-center justify-center grow">
+		<Button>{`Sorry, we're under construction!`}</Button>
+	</main>
+</RootLayout>

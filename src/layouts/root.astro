@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-const { content } = Astro.props;
+import { ModeToggle } from '@/components/shadcn/mode-toggle';
 ---
 
 <script is:inline>
@@ -28,9 +28,19 @@ const { content } = Astro.props;
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
+		<title>Karthik Appiah</title>
 	</head>
-	<body>
-		<slot />
+	<body class="min-h-screen flex flex-col">
+		<header class="p-3 flex justify-between">
+			<div>
+				<h1 class="text-2xl font-semibold">Karthik Appiah</h1>
+			</div>
+			<div>
+				<ModeToggle client:load />
+			</div>
+		</header>
+		<main class="grow flex flex-col">
+			<slot />
+		</main>
 	</body>
 </html>
