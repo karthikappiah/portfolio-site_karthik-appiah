@@ -2,13 +2,53 @@
 import "../styles/global.css";
 
 import RootLayout from "@/layouts/root.astro";
+
+import { Headline } from "@/components/page/headline";
 ---
 
 <RootLayout>
-  <main class="flex grow flex-col">
+  <main class="m-16 flex grow flex-col">
     <section class="flex flex-1">
-      <article class="flex-1">HEADLINE</article>
-      <article class="flex-1">ABOUT</article>
+      <article class="">
+        <Headline
+          client:load
+          src="https://github.com/shadcn.png"
+          alt="@shadcn"
+          fallback="CN"
+        />
+      </article>
+      <div class="min-w-52"></div>
+      <article class="flex-1">
+        <p class="text-sm">
+          Hi, I'm Karthik and welcome to my portfolio! I'd love to connect with
+          you on <a
+            href="https://www.linkedin.com/in/karthikappiah/"
+            class="text-blue-400 underline-offset-2 hover:underline">LinkedIn</a
+          > and <a
+            href=""
+            class="text-zinc-400 underline-offset-2 hover:underline">GitHub</a
+          >, or email <a
+            href="mailto:karthikappiah@proton.me"
+            class="text-purple-400 underline-offset-2 hover:underline"
+            >karthikappiah@proton.me</a
+          >!
+        </p>
+        <br />
+        <p class="text-sm">
+          As an engineer who loves to code, I developed web and mobile
+          applications, architected cloud infrastructure, administered
+          relational and nonrelational databases, trained machine learning
+          models for data analytics, and integrated GenAI chatbots with RAG and
+          fine-tuning.
+        </p>
+        <br />
+        <p class="text-sm">
+          As pre-sales technical consultant, I led startup, SMB, and Fortune 500
+          companies through end-to-end proof-of-concept evaluations involving
+          cloud infrastructure, database administration, data warehousing,
+          machine learning, and artificial intelligence.
+        </p>
+      </article>
     </section>
     <section class="flex flex-1">
       <article class="flex-1">APPS</article>
