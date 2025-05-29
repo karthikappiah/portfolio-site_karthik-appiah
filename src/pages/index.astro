@@ -2,14 +2,18 @@
 import "../styles/global.css";
 
 import RootLayout from "@/layouts/root.astro";
-
-import { Button } from "@/components/shadcn/button";
 ---
 
 <RootLayout>
-  <main class="flex grow items-center justify-center">
-    <Button>
-      <p>Sorry, we're under maintenance!</p>
-    </Button>
+  <main class="flex grow flex-col">
+    <section class="flex flex-1">
+      <article class="flex-1">HEADLINE</article>
+      <article class="flex-1">ABOUT</article>
+    </section>
+    <section class="flex flex-1">
+      <article class="flex-1">APPS</article>
+      <article class="flex-1">BLOG</article>
+      <article class="flex-1">EXPERIENCE</article>
+    </section>
   </main>
 </RootLayout>

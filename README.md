@@ -1,6 +1,6 @@
 # Hi, I'm Karthik!
 
-Welcome to my portfolio's codebase!
+## Welcome to my portfolio's codebase!
 
 ## Commit History
 

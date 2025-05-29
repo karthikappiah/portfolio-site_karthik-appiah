@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 
-import { ModeToggle } from "@/components/shadcn/mode-toggle";
+import "@phosphor-icons/web/regular";
 ---
 
 <script is:inline>
@@ -36,14 +36,6 @@ import { ModeToggle } from "@/components/shadcn/mode-toggle";
     <title>Karthik Appiah</title>
   </head>
   <body class="flex min-h-screen flex-col">
-    <header class="flex justify-between p-5">
-      <div>
-        <h1 class="text-2xl font-semibold">Karthik Appiah</h1>
-      </div>
-      <div>
-        <ModeToggle client:load />
-      </div>
-    </header>
     <main class="flex grow flex-col">
       <slot />
     </main>
