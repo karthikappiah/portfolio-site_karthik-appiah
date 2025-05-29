@@ -1,13 +1,15 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
-import RootLayout from "@/layouts/root.astro"
+import RootLayout from "@/layouts/root.astro";
 
-import { Button } from '@/components/shadcn/button';
+import { Button } from "@/components/shadcn/button";
 ---
 
 <RootLayout>
-	<main class="flex items-center justify-center grow">
-		<Button>{`Sorry, we're under construction!`}</Button>
-	</main>
+  <main class="flex grow items-center justify-center">
+    <Button>
+      <p>Sorry, we're under maintenance!</p>
+    </Button>
+  </main>
 </RootLayout>

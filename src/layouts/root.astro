@@ -1,46 +1,51 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
-import { ModeToggle } from '@/components/shadcn/mode-toggle';
+import { ModeToggle } from "@/components/shadcn/mode-toggle";
 ---
 
 <script is:inline>
-	const getThemePreference = () => {
-		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-			return localStorage.getItem('theme');
-		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-	};
-	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+  const getThemePreference = () => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  };
+  const isDark = getThemePreference() === "dark";
+  document.documentElement.classList[isDark ? "add" : "remove"]("dark");
 
-	if (typeof localStorage !== 'undefined') {
-		const observer = new MutationObserver(() => {
-			const isDark = document.documentElement.classList.contains('dark');
-			localStorage.setItem('theme', isDark ? 'dark' : 'light');
-		});
-		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-	}
+  if (typeof localStorage !== "undefined") {
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
 </script>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Karthik Appiah</title>
-	</head>
-	<body class="min-h-screen flex flex-col">
-		<header class="p-3 flex justify-between">
-			<div>
-				<h1 class="text-2xl font-semibold">Karthik Appiah</h1>
-			</div>
-			<div>
-				<ModeToggle client:load />
-			</div>
-		</header>
-		<main class="grow flex flex-col">
-			<slot />
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Karthik Appiah</title>
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header class="flex justify-between p-5">
+      <div>
+        <h1 class="text-2xl font-semibold">Karthik Appiah</h1>
+      </div>
+      <div>
+        <ModeToggle client:load />
+      </div>
+    </header>
+    <main class="flex grow flex-col">
+      <slot />
+    </main>
+  </body>
 </html>
