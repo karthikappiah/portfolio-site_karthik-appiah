@@ -23,13 +23,14 @@ import { Headline } from "@/components/page/headline";
           Hi, I'm Karthik and welcome to my portfolio! I'd love to connect with
           you on <a
             href="https://www.linkedin.com/in/karthikappiah/"
-            class="text-blue-400 underline-offset-2 hover:underline">LinkedIn</a
+            class="text-amber-400 underline-offset-2 hover:underline"
+            >LinkedIn</a
           > and <a
             href=""
-            class="text-zinc-400 underline-offset-2 hover:underline">GitHub</a
+            class="text-amber-400 underline-offset-2 hover:underline">GitHub</a
           >, or email <a
             href="mailto:karthikappiah@proton.me"
-            class="text-purple-400 underline-offset-2 hover:underline"
+            class="text-amber-400 underline-offset-2 hover:underline"
             >karthikappiah@proton.me</a
           >!
         </p>
@@ -51,8 +52,126 @@ import { Headline } from "@/components/page/headline";
       </article>
     </section>
     <section class="flex flex-1">
-      <article class="flex-1">APPS</article>
-      <article class="flex-1">BLOG</article>
+      <article class="flex-1">
+        <h2 class="py-6 text-lg font-semibold">Apps</h2>
+        <ul class="space-y-5">
+          <li
+            class="group hover:border-muted hover: flex items-center space-x-4"
+          >
+            <div
+              class="bg-card group-hover:bg-muted flex size-11 items-center justify-center rounded-xl"
+            >
+              <i
+                class="ph ph-spotify-logo text-2xl group-hover:text-emerald-300"
+              ></i>
+            </div>
+            <div>
+              <h3 class="group-hover:text-emerald-300">SpotiBye</h3>
+              <p class="text-xs group-hover:text-emerald-300">
+                Spotify, but smarter.
+              </p>
+            </div>
+          </li>
+          <li
+            class="hover:border-muted hover: group flex items-center space-x-4"
+          >
+            <div
+              class="bg-card hover:bg-muted group-hover:bg-muted flex size-11 items-center justify-center rounded-xl"
+            >
+              <i class="ph ph-phosphor-logo text-2xl group-hover:text-sky-300"
+              ></i>
+            </div>
+            <div>
+              <h3 class="group-hover:text-sky-300">Parkbnb</h3>
+              <p class="text-xs group-hover:text-sky-300">Airbnb for parking</p>
+            </div>
+          </li>
+          <li
+            class="hover:border-muted hover: group flex items-center space-x-4"
+          >
+            <div
+              class="bg-card hover:bg-muted group-hover:bg-muted flex size-11 items-center justify-center rounded-xl"
+            >
+              <i class="ph ph-gitlab-logo text-2xl group-hover:text-fuchsia-300"
+              ></i>
+            </div>
+            <div>
+              <h3 class="group-hover:text-fuchsia-300">Whispurr</h3>
+              <p class="text-xs group-hover:text-fuchsia-300">
+                Anonymous social media
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="group my-6 flex w-fit items-center space-x-1 text-gray-500">
+          <a href="#" class="text-xs group-hover:underline"
+            >Click here to see more</a
+          >
+          <i
+            class="ph ph-arrow-up-right text-xs transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          ></i>
+        </div>
+      </article>
+      <article class="flex-1">
+        <h2 class="py-6 text-lg font-semibold">Blog</h2>
+        <ul class="space-y-5">
+          <li
+            class="group hover:border-muted hover: flex items-center space-x-4"
+          >
+            <div
+              class="bg-card group-hover:bg-muted flex size-11 items-center justify-center rounded-xl"
+            >
+              <i class="ph ph-database text-2xl group-hover:text-orange-300"
+              ></i>
+            </div>
+            <div>
+              <h3 class="group-hover:text-orange-300">Deploy MySQL HeatWave</h3>
+              <p class="text-xs group-hover:text-orange-300">
+                For OLTP, OLAP, ML, and AI
+              </p>
+            </div>
+          </li>
+          <li
+            class="hover:border-muted hover: group flex items-center space-x-4"
+          >
+            <div
+              class="bg-card hover:bg-muted group-hover:bg-muted flex size-11 items-center justify-center rounded-xl"
+            >
+              <i class="ph ph-brain text-2xl group-hover:text-red-300"></i>
+            </div>
+            <div>
+              <h3 class="group-hover:text-red-300">MySQL HeatWave AutoML</h3>
+              <p class="text-xs group-hover:text-red-300">Automate MLOps</p>
+            </div>
+          </li>
+          <li
+            class="hover:border-muted hover: group flex items-center space-x-4"
+          >
+            <div
+              class="bg-card hover:bg-muted group-hover:bg-muted flex size-11 items-center justify-center rounded-xl"
+            >
+              <i class="ph ph-head-circuit text-2xl group-hover:text-teal-300"
+              ></i>
+            </div>
+            <div>
+              <h3 class="group-hover:text-teal-300">
+                Modernize Business Intelligence
+              </h3>
+              <p class="text-xs group-hover:text-teal-300">
+                Predict trends with ML and AI
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="group my-6 flex w-fit items-center space-x-1 text-gray-500">
+          <a href="#" class="text-xs group-hover:underline"
+            >Click here to see more</a
+          >
+          <i
+            class="ph ph-arrow-up-right text-xs transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          ></i>
+        </div>
+      </article>
       <article class="flex-1">EXPERIENCE</article>
     </section>
   </main>

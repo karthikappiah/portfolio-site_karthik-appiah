@@ -20,11 +20,11 @@ export const Headline = ({
         <AvatarFallback>{fallback}</AvatarFallback>
       </Avatar>
       <div>
-        <h1 className="text-sm leading-relaxed font-medium">
+        <h1 className="text-lg leading-relaxed font-medium">
           Karthik Gnanakumar Appiah
         </h1>
         <p className="text-sm leading-relaxed opacity-75">
-          Dev ⦁ Cloud ⦁ Database
+          Cloud ⦁ Database ⦁ Web ⦁ Mobile
         </p>
       </div>
     </div>
