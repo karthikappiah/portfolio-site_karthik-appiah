@@ -4,6 +4,8 @@ import "../styles/global.css";
 import RootLayout from "@/layouts/root.astro";
 
 import { Headline } from "@/components/page/headline";
+
+import profile_picture from "@/assets/profile-picture.jpeg";
 ---
 
 <RootLayout>
@@ -12,9 +14,8 @@ import { Headline } from "@/components/page/headline";
       <article class="">
         <Headline
           client:load
-          src="https://github.com/shadcn.png"
-          alt="@shadcn"
-          fallback="CN"
+          src={profile_picture.src}
+          alt="Karthik Gnanakumar Appiah"
         />
       </article>
       <div class="min-w-52"></div>
@@ -104,7 +105,7 @@ import { Headline } from "@/components/page/headline";
           </li>
         </ul>
         <div class="group my-6 flex w-fit items-center space-x-1 text-gray-500">
-          <a href="#" class="text-xs group-hover:underline"
+          <a href="" class="text-xs group-hover:underline"
             >Click here to see more</a
           >
           <i
@@ -164,7 +165,7 @@ import { Headline } from "@/components/page/headline";
           </li>
         </ul>
         <div class="group my-6 flex w-fit items-center space-x-1 text-gray-500">
-          <a href="#" class="text-xs group-hover:underline"
+          <a href="" class="text-xs group-hover:underline"
             >Click here to see more</a
           >
           <i
@@ -173,7 +174,7 @@ import { Headline } from "@/components/page/headline";
         </div>
       </article>
       <article class="flex-1">
-        <h2 class="py-6 text-lg font-semibold">Work</h2>
+        <h2 class="py-6 text-lg font-semibold">Experience</h2>
         <ol class="space-y-5">
           <li class="flex items-center justify-between text-xs">
             <p class="">2024 🡢 2025</p>
